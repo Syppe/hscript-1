@@ -18,13 +18,13 @@
         "cmds": [{"hosts": ["viastream.viasat.tv"], "then": "PROXY SE"}]
         },
 	  "Svtplay": {
-        "description": "Route requests to Svtplay.",
+        "description": "Route requests to Svtplay",
         "link": "svtplay.se",
         "icon": "http://www.svtplay.se/public/2013.21/images/svt-play-2x.png",
         "cmds": [
         {
           "hosts": [
-            "www.svtplay.se", "www.svt.se", "ld.svt.se", "akamaihd.net"
+            "www.svtplay.se", "akamaihd.net"
           ],
           "if": [
             {
@@ -33,19 +33,9 @@
               "then": "PROXY SE"
             },
             {
-              "host": "www.svt.se",
-              "type": "=glob",
-              "then": "PROXY SE"
-            },
-            {
-              "host": "ld.svt.se",
-              "type": "=glob",
-              "then": "PROXY SE"
-            },
-            {
               "host": "akamaihd.net",
               "type": "=glob",
-              "then": "PROXY SE"
+              "then": "DIRECT"
             }
           ],
           "then": "PROXY SE"
