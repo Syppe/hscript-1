@@ -1,0 +1,100 @@
+  {
+    "name": "Swedish Channels",
+    "description": "Route requests to Swedish channel sites",
+    "author": "Syppe",
+    "site": "",
+    "icon": "",
+    "unblocker_rules": {
+      "Tv4Play": {
+        "description": "Route requests to Tv4Play",
+        "link": "tv4play.se",
+        "icon": "http://www.tv4play.se/assets/skeleton/header-logo-e8cccdc9213bb352cc1e6f9d61394e5d.png",
+        "cmds": [
+  			{
+					"hosts": [
+						"tv4play.se"
+					],
+					"if": [
+						{
+							"host": "tv4play.se",
+							"type": "=glob",
+							"then": "DIRECT"
+						},
+						{
+							"host": "prima.tv4play.se",
+							"type": "=glob",
+							"then": "PROXY SE"
+						}
+					],
+					"then": "PROXY SE"
+				}
+			]
+		},
+      "Tv6play": {
+        "description": "Route requests to Tv6play",
+        "link": "tv6play.se",
+        "icon": "http://www.tv6play.se/themes/play/images/tv6-logo.png",
+        "cmds": [
+				{
+					"hosts": [
+						"tv6play.se", "flvplayer.viastream.viasat.tv", "viastream.viasat.tv"
+					],
+					"if": [
+						{
+							"host": "tv6play.se",
+							"type": "=glob",
+							"then": "DIRECT"
+						},
+						{
+							"host": "flvplayer.viastream.viasat.tv",
+							"type": "=glob",
+							"then": "DIRECT"
+						},
+						{
+							"host": "viastream.viasat.tv",
+							"type": "=glob",
+							"then": "PROXY SE"
+						}
+					],
+					"then": "PROXY SE"
+				}
+			]
+		},
+		"Svtplay": {
+        "description": "Route requests to Svtplay",
+        "link": "svtplay.se",
+        "icon": "http://www.svtplay.se/public/2013.21/images/svt-play-2x.png",
+        "cmds": [
+				{
+					"hosts": [
+						"www.svtplay.se", "www.svt.se", "ld.svt.se", "akamaihd.net"
+					],
+					"if": [
+						{
+							"host": "www.svtplay.se",
+							"type": "=glob",
+							"then": "PROXY SE"
+						},
+						{
+							"host": "www.svt.se",
+							"type": "=glob",
+							"then": "PROXY SE"
+						},
+						{
+							"host": "ld.svt.se",
+							"type": "=glob",
+							"then": "PROXY SE"
+						},
+						{
+							"host": "akamaihd.net",
+							"type": "=glob",
+							"then": "PROXY SE"
+						}
+					],
+					"then": "PROXY SE"
+				}
+			]
+		}
+		
+      }
+  }
