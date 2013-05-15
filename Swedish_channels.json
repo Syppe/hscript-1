@@ -41,6 +41,39 @@
           "then": "PROXY SE"
         }
       ]
-    }
+    },
+		"netflix": {
+			"description": "Route requests to Swedish netflix",
+			"link": "netflix.com",
+			"icon": "img/logo_netflix.png",
+			"os": [
+				"windows",
+				"windows8"
+			],
+			"cmds": [
+				{
+					"hosts": [
+						"signup.netflix.com",
+						"movies.netflix.com",
+						"cbp-us.nccp.netflix.com",
+						"contactus.netflix.com",
+						"movies1.netflix.com",
+						"movies2.netflix.com",
+						"movies3.netflix.com"
+					],
+					"if": [
+						{
+							"ext": [
+								"def-ext",
+								"xap"
+							],
+							"type": "in",
+							"then": "DIRECT"
+						}
+					],
+					"then": "PROXY SE"
+				}
+			]
+		}
 	}
 }
