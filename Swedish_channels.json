@@ -2,7 +2,7 @@
     "name": "Swedish Channels",
     "description": "Route requests to Swedish channel sites",
     "author": "Syppe",
-    "site": "",
+    "site": "linux.webcore.fi",
     "icon": "",
     "unblocker_rules": {
       "Tv4Play": {
@@ -47,8 +47,7 @@
 			"link": "netflix.com",
 			"icon": "img/logo_netflix.png",
 			"os": [
-				"windows",
-				"windows8"
+				"windows"
 			],
 			"cmds": [
 				{
