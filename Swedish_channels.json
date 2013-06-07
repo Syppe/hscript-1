@@ -56,47 +56,7 @@
 						"signup.netflix.com",
 						"movies.netflix.com",
 						"cbp-us.nccp.netflix.com",
-						"{
-	"author": "Hola",
-	"site": "http://hola.org",
-	"name": "Hola Unblocker demo",
-	"description": "These scripts are intended as a demonstration only, to show the capabilities of the Hola scripting language. Search the web to find more",
-	"unblocker_rules": {
-		"netflix": {
-			"description": "Watch Netflix",
-			"link": "netflix.com",
-			"icon": "img/logo_netflix.png",
-			"os": [
-				"windows"
-			],
-			"cmds": [
-				{
-					"hosts": [
-						"signup.netflix.com",
-						"movies.netflix.com",
-						"cbp-us.nccp.netflix.com",
 						"cbp-eu.nccp.netflix.com",
-						"contactus.netflix.com",
-						"movies1.netflix.com",
-						"movies2.netflix.com",
-						"movies3.netflix.com"
-					],
-					"if": [
-						{
-							"ext": [
-								"def-ext",
-								"xap"
-							],
-							"type": "in",
-							"then": "DIRECT"
-						}
-					],
-					"then": "PROXY SE"
-				}
-			]
-		}
-	}
-}"
 						"contactus.netflix.com",
 						"movies1.netflix.com",
 						"movies2.netflix.com",
